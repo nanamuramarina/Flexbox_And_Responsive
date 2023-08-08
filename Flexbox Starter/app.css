@@ -7,8 +7,28 @@ h1 {
 #container {
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    /*height: 500px;*/
     margin: 0 auto;
     border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+#container div {
+    width: 200px;
+    height: 200px;
+    /*max-width: 300px;*/
+    max-align: center;
+    flex-basis: 200px;
+}
+
+div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+div:nth-of-type(5) {
+    flex-grow: 2;
+    flex-shrink: 0;
+}
